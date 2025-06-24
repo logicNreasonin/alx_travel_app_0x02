@@ -1,0 +1,17 @@
+# Initialize Git
+git init
+
+# Create a .gitignore file to exclude unnecessary files (like venv, .env, db files)
+echo "venv/" >> .gitignore
+echo ".env" >> .gitignore
+echo "__pycache__/" >> .gitignore
+echo "*.pyc" >> .gitignore
+echo "db.sqlite3" >> .gitignore # If you switch back to sqlite
+echo "media/" >> .gitignore # If you add media file uploads later
+echo ".DS_Store" >> .gitignore # macOS specific
+
+# Add all project files
+git add .
+
+# Make the initial commit
+git commit -m "Initial project setup with Django, DRF, CORS, MySQL via .env, and Swagger"

@@ -1,0 +1,11 @@
+# requirements.txt
+Django>=4.0,<5.0
+djangorestframework>=3.0
+django-cors-headers>=3.0
+django-environ>=0.10
+drf-yasg>=1.0
+# Note: rabbitmq is a message broker, not a Python package.
+# You'll interact with it via a library like celery or kombu.
+# Celery is listed as requested.
+celery>=5.0
+mysqlclient>=2.0 # This is the Python MySQL client library
